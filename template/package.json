@@ -1,12 +1,12 @@
 {
   "name": "express-template-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon src/app.ts",
+    "dev": "nodemon --exec ts-node -r tsconfig-paths/register src/app.ts",
     "build": "tsc",
-    "start": "tsc && node dist/app.js",
+    "start": "tsc && resolve-tspaths && node dist/app.js",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/irel04/express-template-api#readme",
   "dependencies": {
+    "@prisma/client": "^6.5.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2"
@@ -31,7 +32,10 @@
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.10",
     "nodemon": "^3.1.9",
+    "prisma": "^6.5.0",
+    "resolve-tspaths": "^0.8.23",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.8.2"
   },
   "bin": {
