@@ -25,4 +25,6 @@ execSync(`cd ${projectName} && npm install`, { stdio: "inherit" });
 console.log(`✅ Express Template is ready!`);
 console.log(`➡️  Run the following commands:`);
 console.log(`cd ${projectName}`);
-console.log(`npm start`);
+console.log(`For running devolpment: npm run dev`);
+console.log(`For starting the app: npm start`);
+
