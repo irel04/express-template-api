@@ -1,8 +1,9 @@
 {
   "name": "irel-express-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "This npm package is custom made for Irel to scaffold typescript api projects",
   "bin": {
     "express-template-api": "cli.js"
   }
 }
+ 
